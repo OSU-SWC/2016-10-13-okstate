@@ -14,8 +14,8 @@ enddate: 2016-10-14        # machine-readable end date for the workshop in YYYY-
 instructor: ["Ross Bowman", "Sean Fortney", "Jamie Hadwin"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 helper: ["Brandon Boyles", "Rob Burnap", "Jason Henderson", "Nicole Sump-Crethar"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
 contact: "jason.dean.henderson@okstate.edu"      # contact email address for host, lead instructor, or whoever else is handling questions
-etherpad:             # optional: URL for the workshop Etherpad if there is one
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
+etherpad: http://pad.software-carpentry.org/2016-10-13-okstate              # optional: URL for the workshop Etherpad if there is one
+eventbrite: 27844065349          # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
 <!-- See instructions in the comments below for how to edit specific sections of this workshop template. -->
@@ -202,26 +202,23 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </div>
 
 <!--
-  ETHERPAD
-
+  EETHERPAD
   At `_misc/etherpad.txt` you will find a template for the etherpad.
-
   Display the Etherpad for the workshop.  You can set this up in
   advance or on the first day; either way, make sure you push changes
   to GitHub after you have its URL.  To create an Etherpad, go to
-
       http://pad.software-carpentry.org/YYYY-MM-DD-site
-
   where 'YYYY-MM-DD-site' is the identifier for your workshop,
   e.g., '2015-06-10-esu'.
 -->
 {% if page.etherpad %}
 <p id="etherpad">
-  <strong>Etherpad:</strong> <a href="{{http://pad.software-carpentry.org/2016-10-13-okstate}}">{{page.etherpad}}</a>.
+  <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
   <br/>
   We will use this Etherpad for chatting, taking notes, and sharing URLs and bits of code.
 </p>
 {% endif %}
+
 
 <hr/>
 
